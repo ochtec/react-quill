@@ -1,6 +1,6 @@
 'use strict';
 
-var Quill = require('quill');
+var Quill = require('@ochtec/quill');
 
 var QuillMixin = {
 
@@ -49,7 +49,7 @@ var QuillMixin = {
 			if (eventType === Quill.events.SELECTION_CHANGE) {
 				this.handleSelectionChange(rangeOrDelta, oldRangeOrOldDelta, source);
 			}
-			
+
 			if (eventType === Quill.events.TEXT_CHANGE) {
 				this.handleTextChange(rangeOrDelta, oldRangeOrOldDelta, source);
 			}
